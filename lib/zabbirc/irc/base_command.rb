@@ -21,8 +21,8 @@ module Zabbirc
       end
 
       def parse_arguments cmd
-        cmd.scan(/'[a-zA-Z0-9_\-,# ]+'|[a-zA-Z0-9_\-,#]+/).collect do |x|
-          x.match(/[a-zA-Z0-9_\-,# ]+/)[0]
+        cmd.scan(/'[a-zA-Z0-9_\-\.,# ]+'|[a-zA-Z0-9_\-\.,#]+/).collect do |x|
+          x.match(/[a-zA-Z0-9_\-\.,# ]+/)[0]
         end
       end
 
